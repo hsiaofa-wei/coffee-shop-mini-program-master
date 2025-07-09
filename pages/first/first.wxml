@@ -1,0 +1,42 @@
+<view class="header">
+  <view style="overflow: hidden;width: 100%;height: 410rpx;background-color: antiquewhite;">
+     <image class="header-img" src="/static/Homepage1.png" mode="center"/>
+  </view>
+  <view style="display: flex;width: 800rpx;height: 100rpx;margin-top: -300rpx;">
+    <image src="/static/首页头部圆形图标.png" style="margin-left: 40rpx;width: 90rpx;height: 90rpx;" mode="aspectFit" />
+    <view style="margin-left: 20rpx;width: 200rpx;">
+    <image src="/static/首页头部文字.png" style="margin-left: 10rpx;width: 330rpx;height: 60rpx;" mode="aspectFit" />
+    <image src="/static/首页头部小文字.png" style="margin-left: 10rpx;width: 200rpx;height: 40rpx;" mode="aspectFit" />
+    </view>
+  </view>
+</view>
+<view class="header2">
+  <navigator url="/pages/munuAll/menuAll" open-type="switchTab"> <!--外送点单-->
+    <image class="take-out-ordering" src="/static/Take-out ordering.png" mode="widthFix"/>
+  </navigator>
+  <navigator url="/pages/munuAll/menuAll" open-type="switchTab"><!--堂食-->
+    <image class="dine-in" src="/static/Dine-in.png" />
+  </navigator>
+  <navigator url="/pages/munuAll/menuAll" open-type="switchTab"><!--门店自取-->
+    <image class="in-store" src="/static/In-store.png"/>
+  </navigator>
+  <navigator url="/pages/MenDian/mendian" open-type="redirect">
+    <image class="search-store" src="/static/search-store.png" mode="" />
+  </navigator>
+  <swiper indicator-dots="{{true}}" 
+    autoplay="{{true}}"
+    interval="3000"
+    duration="500"
+    circular="{{true}}"
+    >
+    <swiper-item>
+      <image src="/static/coffee-Carousel.png" mode="aspectFill" />
+    </swiper-item>
+    <swiper-item>
+      <image src="/static/coffee-2.png" mode="aspectFill" />
+    </swiper-item>
+    <swiper-item>
+      <image src="/static/coffee-3.png" mode="aspectFill" />
+    </swiper-item>
+  </swiper>
+</view>

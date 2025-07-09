@@ -1,0 +1,41 @@
+<!--pages/orders/orders.wxml-->
+<view class="order-tab">
+  <navigator url="/pages/munuAll/menuAll" open-type="switchTab">
+    <view>
+      <image class="order-tab-image" src="/static/leftarrow.png" mode="" />
+    </view>
+    <view class="order-tab-text">
+      我的订单
+    </view>
+  </navigator>
+</view>
+<view class="main">
+  <view class="top-tab">
+    <button class="tab {{currentTab === 0 ? 'active' : ''}}" bind:tap="switchTab" data-index = "0" style="font-size: 25rpx;">全部订单</button>
+    <button class="tab {{currentTab === 1 ? 'active' : ''}}" bind:tap="switchTab" data-index = "1" style="font-size: 25rpx;">自取/预约</button>
+    <button class="tab {{currentTab === 2 ? 'active' : ''}}" bind:tap="switchTab" data-index = "2" style="font-size: 25rpx;">送货上门</button>
+  </view>
+  <view class="order-frame">
+    <block wx:for="{{filteredOrders}}" wx:key="id">
+      <view class="store-item {{item.isSelected? 'active' : ''}}" data-index="{{index}}">
+        <view class="order-top">
+          <view class="order-type"><text>{{item.type}}</text></view>
+          <view class="order-name">{{item.name}}</view>
+          <view class="order-state">{{item.state}}</view>
+        </view>
+        <hr />
+        <view class="order-bottom">
+          <image class="order-image" src="{{item.img}}" mode="" />
+          <view class="order-coffeename">{{item.coffeename}}</view>
+          <view class="order-specification">{{item.specification}}</view>
+          <view class="order-time">{{item.time}}</view>
+          <view class="order-price">{{item.price}}</view>
+          <view class="order-total">{{item.total}}</view>
+        </view>
+      </view>
+    </block>
+    <view wx:if="{{filteredOrders.length === 0}}" class="empty-tip">
+      <text>暂无相关订单~~~</text>
+    </view>
+  </view>
+</view>

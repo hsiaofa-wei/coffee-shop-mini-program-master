@@ -1,0 +1,144 @@
+/* pages/munuAll/menuAll.wxss */
+.header{
+  display: flex;
+  box-sizing:border-box;
+  padding: 0rpx 15rpx;
+  align-items: center;          /* 垂直居中 */
+  width: 100%;                 /* 确保容器有宽度 */
+}
+.left-header{
+  display: flex;
+  margin-right: auto;
+}
+.right-header{
+  margin-left: auto;
+}
+.deliveryWay {
+  display: flex;
+  width: 300rpx;
+  height: 72rpx;
+  border-radius: 35rpx;
+  border: 1px solid #d3d3d3; /* 边框宽度 样式 颜色 */
+}
+.deliverySelet {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  background-color: #51a2ae;
+  margin: 8rpx 8rpx;
+  height: 58rpx;
+  border-radius: 35rpx;
+  color: #ffffff;
+  font-size: 26rpx;/* 字体大小 */
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+
+.deliveryNon {
+  color: #000000;
+  font-size: 26rpx;/* 字体大小 */
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 滑动指示器效果 */
+.delivery-selector::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background-color: #1989fa;
+  border-radius: 40rpx;
+  transition: all 0.3s ease;
+  z-index: 0;
+}
+
+.delivery-selector[data-active="1"]::after {
+  left: 50%;
+}
+.store-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 20px 0px;
+}
+.store-item {
+  border: 1px solid #eaeaea;
+  border-radius: 5px;
+  padding: 15px;
+  display: flex;
+  justify-content: space - between;
+  position: relative;
+}
+.store-item.active {
+  border: 1px solid #87ceeb;
+}
+.store-info {
+  width: 60%;
+}
+.store-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+.store-address view {
+  font-size: 14px;
+  color: #666;
+  margin-top: 5px;
+}
+.store-hours {
+  font-size: 14px;
+  color: #999;
+  margin-top: 10px;
+}
+.store-action {
+  width: 35%;
+  text-align: right;
+  display: flex;
+  flex-direction: column; /* 垂直排列子元素 */
+  justify-content: center; /* 使子元素在垂直方向居中 */
+  align-items: center;
+}
+.go-order {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center; 
+}
+.distance {
+  font-size: 16px;
+  color: #333;
+}
+.icon-location::before {
+  content: "";
+  width: 18px;
+  height: 18px;
+  background-image: "/static/位置图标.png";
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 5px;
+  margin: 5px 0px;
+}
+.check-mark {
+  width: 40px;
+  height: 40px;
+  background-image: "/static/位置图标.png";
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+.divider{
+  width: 1px;
+  background-color: #ccc;
+  margin: 0 16px;
+  align-self: stretch;
+}

@@ -1,0 +1,46 @@
+<!--pages/addAddress/addAddress.wxml-->
+<view class="header">添加地址</view>
+<view class="lineheader"></view>
+<view class="body">
+  <van-field
+    value="{{ form.username }}"
+    clearable
+    label="联系人"
+    placeholder="用于取餐时对您的称呼"
+  />
+  <view class="sex">
+  <van-radio-group value="{{ form.usersex }}" bind:change="selectSex" direction="horizontal">
+    <view class="sextitle">性别</view>
+    <van-radio name="男">先生</van-radio>
+    <van-radio name="女">女士</van-radio>
+  </van-radio-group>
+  </view>
+  <view class="line"></view>
+  <van-field
+    value="{{ form.phonenum }}"
+    clearable
+    label="电话"
+  />
+  <van-field
+    value="{{ form.address }}"
+    clearable
+    label="地址"
+    placeholder="选择收货地址"
+  />
+ 
+  <van-field
+    value="{{ form.doornum }}"
+    clearable
+    label="门牌号"
+    placeholder="如：5号208室"
+  />
+<view class="body-foot">
+    <van-checkbox value="{{ dfaddress }}" bind:change="onDfaddress">
+    设为默认地址</van-checkbox>
+</view>
+</view>
+<view class="foot">
+<navigator url="/pages/WaiSong/waisong" open-type="redirect">
+<button class="submitForm round info" bind:tap="onSubmit">保存</button>
+</navigator>
+</view>

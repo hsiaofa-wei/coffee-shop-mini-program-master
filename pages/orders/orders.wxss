@@ -1,0 +1,152 @@
+.main{
+  background-color: #EFEFEF;
+  width: 100%;
+  height: 1280rpx;
+}
+.order-tab{
+  width: 100%;
+  height: 160rpx;
+  position: relative;
+}
+.order-tab-image{
+  width: 50rpx;
+  height: 50rpx;
+  margin-left: 50rpx;
+  position:absolute;
+}
+.order-tab-text{
+  width: 150rpx;
+  height: 50rpx;
+  margin-top: 100rpx;
+  margin-left: 300rpx;
+}
+.top-tab{
+  width: 700rpx;
+  height: 70rpx;
+  margin-top: -80rpx;
+  margin-left: 25rpx;
+  border-radius: 50rpx;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* 激活选项卡样式 */
+.top.active{
+  color: #FF6B6B;
+}
+/* 空状态提示 */
+/* .empty-tip{
+  padding: 100rpx 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.empty-tip text{
+  color: black;
+  font-size: 32rpx;
+} */
+.tab{
+  width: 200rpx;
+  height: 60rpx;
+  border-radius: 50rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+}
+.tab.active{
+  background-color: #22A4B0;
+}
+.order-frame{
+  width: 700rpx;
+  height: auto;
+  margin-top: 30rpx;
+  background-color: white;
+  border-radius: 10rpx;
+  margin-left: 25rpx;
+}
+.order-top{
+  width: 700rpx;
+  height: 80rpx;
+  position: relative;
+}
+.order-type{
+  position: absolute;
+  width: 150rpx;
+  height: 50rpx;
+  margin-top: 18rpx;
+  margin-left: 20rpx;
+  background-color: #22A4B0;
+  color: white;
+  font-size: 28rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.order-name{
+  position: absolute;
+  width: 240rpx;
+  height: 50rpx;
+  margin-top: 18rpx;
+  margin-left: 180rpx;
+  font-weight:600;
+  font-size: 30rpx;
+}
+.order-state{
+  position: absolute;
+  width: 100rpx;
+  height: 50rpx;
+  margin-top: 15rpx;
+  margin-left: 570rpx;
+}
+.order-bottom{
+  width: 700rpx;
+  height: 200rpx;
+  position: relative;
+}
+.order-image{
+  position: absolute;
+  width: 100rpx;
+  height: 100rpx;
+  margin-top: -5rpx;
+  margin-left: 25rpx;
+}
+.order-coffeename{
+  width: 150rpx;
+  height: 50rpx;
+  margin-top: 20rpx;
+  margin-left: 140rpx;
+  font-size: 30rpx;
+  font-weight:bold;
+}
+.order-specification{
+  width: 200rpx;
+  height: 50rpx;
+  margin-left: 140rpx;
+  font-size: 26rpx;
+}
+.order-total{
+  width: 50rpx;
+  height: 50rpx;
+  margin-left: 620rpx;
+  margin-top: -150rpx;
+  font-size: 26rpx;
+  font-weight: bold;
+}
+.order-time{
+  width: 300rpx;
+  height: 50rpx;
+  margin-top: 20rpx;
+  margin-left: 25rpx;
+  font-size: 22rpx;
+}
+.order-price{
+  width: 100rpx;
+  height: 30rpx;
+  margin-top: -50rpx;
+  margin-left: 600rpx;
+  font-size: 24rpx;
+  font-weight: bold;
+}

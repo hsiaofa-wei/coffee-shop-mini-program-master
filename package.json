@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "@vant/weapp": "^1.11.7"
+  },
+  "scripts": {
+    "dev": "echo '请使用微信开发者工具打开项目，导入项目路径为当前目录，配置 appid 为 wxfb470df757ea6503 来运行小程序'"
+  }
+}

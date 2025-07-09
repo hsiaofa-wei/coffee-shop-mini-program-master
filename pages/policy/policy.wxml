@@ -1,0 +1,15 @@
+<!--pages/policy/policy.wxml-->
+<navigator url="/pages/myself/myself" open-type="switchTab" class="back">
+    <view style="box-sizing:border-box;height: 76rpx;width: 76rpx;border-radius: 38rpx;display: flex;padding-left: 6rpx;background-color: rgba(0, 0, 0, 0.055);">
+    <van-icon size="30px" name="arrow-left"/>
+    </view>
+</navigator>
+<view class="title">隐私政策</view>
+<view class="Times">
+    <view class="time">发布时间：{{pushTime}}</view>
+    <view class="time">生效时间：{{activeTime}}</view>
+</view>
+<view class="bodyContent">
+    <rich-text nodes="{{content}}"></rich-text>
+    <view style="height: 40rpx;"></view>
+</view>

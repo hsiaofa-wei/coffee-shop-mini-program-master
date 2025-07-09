@@ -1,0 +1,309 @@
+/* pages/munuAll/menuAll.wxss */
+.header {
+  display: flex;
+  box-sizing: border-box;
+  padding: 0rpx 15rpx;
+  align-items: center;
+  /* 垂直居中 */
+  width: 100%;
+  /* 确保容器有宽度 */
+}
+
+.left-header {
+  display: flex;
+  margin-right: auto;
+}
+
+.right-header {
+  margin-left: auto;
+}
+
+.deliveryWay {
+  display: flex;
+  width: 300rpx;
+  height: 72rpx;
+  border-radius: 35rpx;
+  border: 1px solid #d3d3d3;
+  /* 边框宽度 样式 颜色 */
+}
+
+.deliverySelet {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  background-color: #51a2ae;
+  margin: 8rpx 8rpx;
+  height: 58rpx;
+  border-radius: 35rpx;
+  color: #ffffff;
+  font-size: 26rpx;
+  /* 字体大小 */
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+
+.deliveryNon {
+  color: #000000;
+  font-size: 26rpx;
+  /* 字体大小 */
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 滑动指示器效果 */
+.delivery-selector::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background-color: #1989fa;
+  border-radius: 40rpx;
+  transition: all 0.3s ease;
+  z-index: 0;
+}
+
+.delivery-selector[data-active="1"]::after {
+  left: 50%;
+}
+
+.lineheader {
+  /* 横线 */
+  height: 1px;
+  /* 控制线的高度 */
+  background-color: #00000060;
+  /* 线的颜色 */
+  margin-top: 25rpx;
+  margin-left: 0rpx;
+  width: 100%;
+  /* 宽度 */
+}
+
+.body {
+  height: 1100rpx;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+}
+
+.body-left {
+  /* 导航栏 */
+  min-width: 21%;
+  height: 100%;
+  background-color: #f7f8fa;
+}
+
+.body-right {
+  /* 菜单内容 */
+  
+  width: 79%;
+  height: 100%;
+  padding-bottom: 80rpx;
+  background-color: rgb(255, 255, 255);
+}
+
+.bodyImage {
+  /* 菜单顶部图片 */
+  width: 100%;
+  height: 290rpx;
+  margin-top: 18rpx;
+  background-color: rgb(255, 255, 255);
+}
+.menuCard {
+  /* 商品卡片列表条 */
+  display: flex;
+  flex-direction: column;    /* 垂直排列 */
+  width: 100%;
+  height: auto;
+  background-color: rgb(255, 255, 255);
+}
+.cardType{
+    /* 商品类型卡片 */
+    display: flex;
+    
+    flex-direction: column;    /* 垂直排列 */
+    height: auto;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+.menuCardContent {
+  /* 卡片文字内容 */
+  width: 240rpx;
+  height: 200rpx;
+  background-color: rgb(255, 255, 255);
+}
+
+.cardTitle {
+  margin-top: 22rpx;
+  color: #101010;
+  font-size: 34rpx;
+  font-weight: 600;
+
+}
+
+.cardDetail {
+  margin-top: 10rpx;
+  color: #C0C0C0;
+  font-size: 24rpx;
+  font-weight: 400;
+
+}
+
+.cardprice {
+  margin-top: 30rpx;
+  font-size: 25rpx;
+  color: #FF8C00;
+  font-size: 36rpx;
+  font-weight: 800;
+
+}
+.cardLine{
+/* 横线 */
+margin-left: 5%;
+  height: 1px;
+  /* 控制线的高度 */
+  background-color: #00000060;
+  /* 线的颜色 */
+  width: 90%;
+  /* 宽度 */
+}
+
+.selectItem {
+  /* 选规格-按钮 */
+  /* 基础按钮样式 */
+  display: flex;
+  /* 改为块级flex容器 */
+  align-items: center;
+  justify-content: center;
+  margin-top: 130rpx;
+  padding: 0 0rpx;
+  /* 增加左右内边距 */
+  height: 55rpx;
+  /* 按钮高度 */
+  min-width: 120rpx;
+  font-size: 26rpx;
+  /* 文字大小 */
+  box-sizing: border-box;
+}
+
+.selectItem.round {
+  border-radius: 32rpx;
+  /* 按钮高度的一半 */
+}
+
+/* 按钮信息类型样式 (蓝色) */
+.selectItem.info {
+  color: rgb(255, 255, 255);
+  /* 文字颜色 */
+  background-color: #51a2ae;
+}
+
+/* 按钮点击效果 */
+.selectItem.info:active {
+  background-color: #41828b;
+  opacity: 1;
+}
+
+.foot {
+  position: fixed;
+  bottom: 0rpx;
+  height: 120rpx;
+  width: 120%;
+  /* 控制“去下单”的位置 */
+  background-color: rgb(255, 255, 255);
+}
+
+.shadow-line1 {
+  height: 1px;
+  /* 线的高度 */
+  background-color: transparent;
+  /* 透明背景 */
+  box-shadow: 0 -1px 4px 0 rgba(0, 0, 0, 0.63);
+  /* 阴影效果 */
+}
+
+.a-round1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 40rpx;
+  margin-top: -40rpx;
+  height: 140rpx;
+  width: 140rpx;
+  border-radius: 50%;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid #ffffff;
+  /* 边框宽度 样式 颜色 */
+}
+
+.a-round2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 95rpx;
+  width: 95rpx;
+  border-radius: 50%;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid #c4c0c0;
+  /* 边框宽度 样式 颜色 */
+}
+
+.gotoOrder {
+  display: flex;
+  background-color: #51a2ae;
+  margin-top: 30rpx;
+  margin-left: 120rpx;
+  padding: 0 0;
+  height: 64rpx;
+  min-width: 150rpx;
+  border-radius: 32rpx;
+  color: #ffffff;
+  align-items: center;
+  justify-content: center;
+  font-size: 26rpx;
+  /* 字体大小 */
+}
+
+.gotoOrder:active {
+  background-color: #41828b;
+  opacity: 1;
+}
+
+.text-item {
+  width: 150rpx;
+  height: 50rpx;
+  border-radius: 20px;
+  background-color: rgb(204, 198, 198);
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+
+.text-item.active {
+  background-color: #07c160;
+  /* 选中时的背景色 */
+  color: white;
+}
+
+.dialog-image{
+  width: 650rpx;
+  height: 350rpx;
+}
+
+.dialog-button{
+  background-color: blueviolet;
+  border-radius: 50rpx;
+  width: 500rpx;
+  height: 80rpx;
+  align-items: center;
+  margin-bottom: 20rpx;
+  margin-top: 20rpx;
+}
+
+.custom-dialog{
+    max-height: 90vh; /* 限制最大高度为视窗的70% */
+    overflow-y: auto; /* 内容超出时显示滚动条 */
+}

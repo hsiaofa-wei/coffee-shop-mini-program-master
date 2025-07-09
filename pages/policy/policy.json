@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "van-icon": "@vant/weapp/icon/index"
+  },
+  "navigationBarTitleText": "隐私政策",
+  "initialRenderingCache": "static",
+  "navigationStyle": "custom"
+}

@@ -1,0 +1,54 @@
+<!--pages/WaiSong/waisong.wxml-->
+<view class="header">
+    <view class="left-header">
+        <view style="margin-bottom: 4rpx;" style="display: flex;align-items: center;">
+            {{addressName}}
+            <view style="color:black;margin-left: 15rpx;font-size: 28rpx;">
+            收货地址</view>
+        </view>
+    </view>
+    <view class="right-header">
+        <view class="deliveryWay">
+            <view 
+                class=" {{activeTab == 0 ? 'deliverySelet' : 'deliveryNon'}}" 
+                bindtap="switchTab" 
+                data-index="0"
+            ><navigator url="/pages/MenDian/mendian" open-type="redirect">自提/预约</navigator>
+            </view>
+        <view 
+            class="delivery-option {{activeTab == 1 ? 'deliverySelet' : 'deliveryNon'}}" 
+            bindtap="switchTab" 
+            data-index="1"
+            >送货上门
+        </view>
+    </view>
+    </view>
+</view>
+<view class="main-container">
+  <block wx:for="{{addressList}}" wx:key="id">
+    <view class="address-item">
+      <view class="left-section">
+        <view class="address-top">{{item.address}}</view>
+        <view class="address-bottom">
+          <view class="default-tag" wx:if="{{item.isDefault}}">默认地址</view>
+          <view class="name-phone">
+            <view class="name">{{item.name}}</view>
+            <view class="phone">{{item.phone}}</view>
+          </view>
+        </view>
+      </view>
+      <view class="right-section">
+      <navigator url="/pages/addAddress/addAddress" open-type="redirect">
+        <view class="edit-icon">
+          <van-icon name="edit" />
+        </view>
+      </navigator>
+      </view>
+    </view>
+  </block>
+  <view class="add-address-button">
+  <navigator url="/pages/addAddress/addAddress" open-type="redirect">
+    <view class="button-text">新增地址</view>
+  </navigator>
+  </view>
+</view>

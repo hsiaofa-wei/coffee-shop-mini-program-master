@@ -1,0 +1,33 @@
+/* pages/policy/policy.wxss */
+.back{
+    margin-top: 50rpx;
+    margin-left: 20rpx;
+    background-color: rgb(255, 255, 255);
+}
+.title{
+    text-align: center;
+    font-size: 40rpx;
+    background-color: rgb(255, 255, 255);
+}
+.Times{
+    box-sizing:border-box;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20rpx;
+    padding-right: 40rpx;
+    height: 80rpx;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+.time{
+    margin-top: 6rpx;
+    margin-left: 60%;/*时间距离左边长度*/
+    font-size: 22rpx;/*时间文字大小*/
+    font-weight: 300;
+}
+.bodyContent{
+    width: 93%;
+    height: auto;
+    padding: 0 25rpx;
+    background-color: rgb(255, 255, 255);
+}

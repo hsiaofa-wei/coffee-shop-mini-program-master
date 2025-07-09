@@ -1,0 +1,134 @@
+.container {
+  background-color: #feecea; /* 浅粉色背景 */
+  padding: 20rpx;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+.top-section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20rpx;
+}
+.left-part {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 80px;
+}
+.left-part image {
+  width: 100%;
+  height: 100%;
+}
+.middle-part {
+  font-size: 30rpx;
+  flex: 1;
+  margin-right: 20px;
+}
+.right-part {
+  background-color: #fd9bb2; /* 浅红色按钮背景 */
+  padding: 10rpx 20rpx;
+  border-radius: 10rpx;
+  margin-left: 30px;
+}
+.sign-button {
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-size: 28rpx;
+}
+.bottom-section {
+  background-color: #fd9bb2; /* 浅红色背景 */
+  padding: 20rpx;
+  border-radius: 10rpx;
+  width: 75%;
+}
+.member-info {
+  color: white;
+}
+.member-title {
+  font-size: 36rpx;
+  margin-bottom: 10rpx;
+}
+.bonus-label {
+  font-size: 28rpx;
+  margin-bottom: 10rpx;
+}
+.bonus-value {
+  font-size: 28rpx;
+  border-bottom: 1px solid white;
+  padding-bottom: 5rpx;
+  margin-bottom: 10rpx;
+}
+.upgrade-tip {
+  font-size: 24rpx;
+  margin-bottom: 10rpx;
+}
+.view-rights {
+  text-align: right;
+  font-size: 28rpx;
+  color: white;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f2f2;
+  padding: 20rpx;
+}
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.card {
+  background-color: white;
+  width: 45%;
+  padding: 20rpx;
+  border-radius: 10rpx;
+  box-shadow: 0 2rpx 4rpx rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.number {
+  font-size: 40rpx;
+  font-weight: bold;
+  margin-bottom: 10rpx;
+}
+.icon {
+  width: 60rpx;
+  height: 60rpx;
+  margin-bottom: 10rpx;
+}
+.icon image {
+  width: 100%;
+  height: 100%;
+}
+.name {
+  font-size: 28rpx;
+}
+.new-container {
+  background-color: white;
+  margin-top: 20px;
+}
+.new-item {
+  display: flex;
+  align-items: center;
+  padding: 20rpx;
+  border-bottom: 1rpx solid #eaeaea;
+}
+.new-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+}
+
+.new-text {
+  font-size: 32rpx;
+  flex: 1;
+}
+.new-arrow {
+  font-size: 32rpx;
+  color: #666;
+}

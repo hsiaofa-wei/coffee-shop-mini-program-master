@@ -1,0 +1,59 @@
+{
+  "entryPagePath": "pages/first/first",
+  "pages": [
+    "pages/first/first",
+    "pages/orders/orders",
+    "pages/munuAll/menuAll",
+    "pages/addAddress/addAddress",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/myself/myself",
+    "pages/MenDian/mendian",
+    "pages/WaiSong/waisong",
+    "pages/ordersjiesuan/orderjiesuan",
+    "pages/JieSuan/jiesuan",
+    "pages/YouHui/youhui",
+    "pages/KongYou/kongyou",
+    "pages/policy/policy",
+    "pages/Riderpage/raiderpage",
+    "pages/User/user",
+    "pages/Member/member",
+    "pages/Help/help"
+  ],
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/first/first",
+        "text": "首页",
+        "iconPath": "/static/first.png",
+        "selectedIconPath": "/static/首页.png"
+      },
+      {
+        "pagePath": "pages/munuAll/menuAll",
+        "text": "菜单",
+        "iconPath": "/static/menu.png",
+        "selectedIconPath": "/static/菜单.png"
+      },
+      {
+        "pagePath": "pages/orders/orders",
+        "text": "订单",
+        "iconPath": "/static/orders.png",
+        "selectedIconPath": "/static/订单.png"
+      },
+      {
+        "pagePath": "pages/myself/myself",
+        "text": "我的",
+        "iconPath": "/static/main.png",
+        "selectedIconPath": "/static/我的.png"
+      }
+    ]
+  },
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarBackgroundColor": "#ffffff"
+  },
+  "componentFramework": "glass-easel",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

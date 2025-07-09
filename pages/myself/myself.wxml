@@ -1,0 +1,87 @@
+<view class="backGroundHeader"></view>
+<view class="backGround"></view>
+<view class="main">
+  <view class="header">
+    <view class="photo-Back">
+      <view class="photoImg">
+        <image src="/static/头像.png" style="width:105%;height:105%;"></image>
+      </view>
+    </view>
+    <view class="photoName">{{imgName}}</view>
+  </view>
+  <view class="body">
+    <navigator url="/pages/orders/orders" open-type="switchTab">
+      <view class="bodyItem" style="display: flex;justify-content: space-between; align-items: center;padding-right: 40rpx;">
+        <view>
+          <van-icon size="20px" style="margin-right: 15rpx;" name="bars" />
+          我的订单
+        </view>
+        <van-icon name="arrow" />
+      </view>
+    </navigator>
+    <view class="line"></view>
+    <navigator url="/pages/WaiSong/waisong" open-type="redirect">
+      <view class="bodyItem" style="display: flex;justify-content: space-between; align-items: center;padding-right: 40rpx;">
+        <view>
+          <van-icon size="20px" style="margin-right: 15rpx;" name="location" />
+          地址管理
+        </view>
+        <van-icon name="arrow" />
+      </view>
+    </navigator>
+    <view class="line"></view>
+    <navigator url="/pages/Member/member">
+      <view class="bodyItem" style="display: flex;justify-content: space-between; align-items: center;padding-right: 40rpx;">
+        <view>
+          <van-icon size="20px" style="margin-right: 15rpx;" name="gem-o" />
+          会员中心
+        </view>
+        <van-icon name="arrow" />
+      </view>
+    </navigator>
+    <view class="line"></view>
+    <navigator url="/pages/YouHui/youhui" open-type="redirect">
+      <view class="bodyItem" style="display: flex;justify-content: space-between; align-items: center;padding-right: 40rpx;">
+        <view>
+          <van-icon size="20px" style="margin-right: 15rpx;" name="bill-o" />
+          优惠券
+        </view>
+        <van-icon name="arrow" />
+      </view>
+    </navigator>
+
+    <view class="line"></view>
+    <navigator url="/pages/User/user">
+      <view class="bodyItem" style="display: flex;justify-content: space-between; align-items: center;padding-right: 40rpx;">
+        <view>
+          <van-icon size="20px" style="margin-right: 15rpx;" name="manager-o" />
+          个人中心
+        </view>
+
+        <van-icon name="arrow" />
+      </view>
+    </navigator>
+    <view class="line"></view>
+    <navigator url="/pages/Help/help" open-type="redirect">
+      <view class="bodyItem" style="display: flex;justify-content: space-between; align-items: center;padding-right: 40rpx;">
+        <view>
+          <van-icon size="20px" style="margin-right: 15rpx;" name="service" />
+          帮助反馈
+        </view>
+        <van-icon name="arrow" />
+      </view>
+    </navigator>
+    <view class="line"></view>
+    <navigator url="/pages/policy/policy" open-type="redirect">
+      <view class="bodyItem" style="display: flex;justify-content: space-between; align-items: center;padding-right: 40rpx;">
+        <view>
+          <van-icon size="20px" style="margin-right: 15rpx;" name="orders-o" />
+          隐私政策
+        </view>
+        <van-icon name="arrow" />
+      </view>
+    </navigator>
+
+  </view>
+
+</view>

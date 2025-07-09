@@ -1,0 +1,64 @@
+/* pages/addAddress/addAddress.wxss */
+.header{    /*添加地址*/
+    margin-top: 96rpx;
+    margin-left: 48rpx;
+}
+.lineheader{
+    height: 1px;  /* 控制线的高度 */
+    background-color: #eaeaea7e;  /* 线的颜色 */
+    margin-top: 25rpx;
+    margin-left: 30rpx;
+    width: 91%;  /* 宽度 */
+}
+.sex{
+    margin-top: 25rpx;
+    margin-left: 32rpx;
+    font-size:28rpx
+}
+.sextitle{
+    margin-right: 140rpx;
+    color: rgba(0, 0, 0, 0.712);
+}
+.line{
+    height: 1px;  /* 控制线的高度 */
+    background-color: #eaeaea7e;  /* 线的颜色 */
+    margin-top: 22rpx;
+    margin-left: 30rpx;
+    width: 91%;  /* 宽度 */
+}
+.body-foot{
+    font-size: 28rpx;
+    margin-top: 25rpx;
+    margin-left: 30rpx;
+}
+.foot{
+    position: fixed;
+    width: 100%;
+    bottom: 40rpx;
+    text-align:center;
+}
+.submitForm{
+    /* 基础按钮样式 */
+  display: flex; /* 改为块级flex容器 */
+  align-items: center;
+  justify-content: center;
+  height: 64rpx;/* 按钮高度 */
+  min-width: 80%;
+  font-size: 28rpx;/* 文字大小 */
+  box-sizing: border-box;
+}
+.submitForm.round {
+    border-radius: 32rpx; /* 按钮高度的一半 */
+  }
+  
+  /* 按钮信息类型样式 (蓝色) */
+  .submitForm.info {
+    color: rgb(255, 255, 255);/* 文字颜色 */
+    background-color: #1989fa;
+  }
+  
+  /* 按钮点击效果 */
+  .submitForm.info:active {
+    background-color: #0570db;
+    opacity: 1;
+  }

@@ -1,0 +1,85 @@
+<view class="header">
+    <view class="left-header">
+        <image src="/static/位置图标.png" style="width: 40rpx;height: 40rpx;margin: 0rpx 20rpx;"></image>
+        <view style="color:black;margin-left: 15rpx;font-size: 28rpx;">
+            配送地址
+        </view>
+    </view>
+    <view class="right-header">
+        <view class="deliveryWay">
+            <view 
+                class=" {{activeTab == 0 ? 'deliverySelet' : 'deliveryNon'}}" 
+                bindtap="switchTab" 
+                data-index="0"
+            >
+                <navigator url="/pages/ordersjiesuan/orderjiesuan" open-type="redirect"> 自提/预约</navigator>
+            </view>
+            <view 
+                class="delivery-option {{activeTab == 1 ? 'deliverySelet' : 'deliveryNon'}}" 
+                bindtap="switchTab" 
+                data-index="1"
+            >
+                送货上门
+            </view>
+        </view>
+    </view>
+</view>
+<view class="address-container">
+    <view class="address-text">
+        <view class="address-line1">{{addressLine1}}</view>
+        <view class="address-line2">{{addressLine2}}</view>
+    </view>
+</view>
+<view class="product-container">
+    <!-- 横线上面部分 -->
+    <view class="upper-part">
+        <view class="product-name-spec">
+            <image src="/static/拿铁.png" style="width: 40rpx;height: 40rpx;margin: 0rpx 20rpx;"></image>
+            <view class="product-info">
+                <view class="product-name">{{product.name}}</view>
+                <view class="product-spec">{{product.spec}}</view>
+            </view>
+        </view>
+        <view class="product-quantity">X{{product.quantity}}</view>
+        <view class="product-price">¥{{product.price}}</view>
+    </view>
+    <view class="divider"></view>
+    <!-- 横线下面部分 -->
+    <view class="lower-part">
+        <view class="left-section">
+            <view class="left-upper">
+                <view class="summary-label">共{{totalProductCount}}件商品</view>
+            </view>
+            <view class="left-lower">
+                <view class="summary-label">配送费</view>
+            </view>
+        </view>
+        <view class="right-section">
+            <view class="right-upper">
+                <view class="summary-value">小计: ¥{{product.quantity * product.price}}</view>
+            </view>
+            <view class="right-lower">
+                <view class="summary-value">¥{{deliveryFee}}</view>
+            </view>
+        </view>
+    </view>
+</view>
+<view class="remark-container">
+    <view class="remark-item">
+        <view class="remark-text">备注特殊要求</view>
+        <view class="arrow-icon">
+            <van-icon name="arrow" />
+        </view>
+    </view>
+</view>
+<view class="payment-container">
+    <view class="total-price-section">
+        <view class="total-label">实付</view>
+        <view class="total-amount">¥{{totalPrice}}</view>
+    </view>
+    <view class="payment-button-section">
+        <view class="payment-button" bindtap="goToPayment">
+            <view class="button-text">去支付</view>
+        </view>
+    </view>
+</view>

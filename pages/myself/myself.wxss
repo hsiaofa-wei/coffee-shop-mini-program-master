@@ -1,0 +1,79 @@
+/* pages/myself/myself.wxss */
+.backGroundHeader{
+    width: 100%;
+    height: 300rpx;
+    background-color: #65b6c2;
+}
+.backGround{
+    width: 100%;
+    height: 1000rpx;
+    background-color: #f3f3f3;
+}
+.main{
+    margin-top: -1200rpx;
+    width: 100%;
+}
+.header{
+    display: flex;
+    align-items: center;
+    width: 600rpx;
+    height: 120rpx;
+}
+.photo-Back{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 80rpx;
+    height: 110rpx;
+    width: 110rpx;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #ffffff;
+}
+.photoImg{
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  height: 100rpx;
+  width: 100rpx;
+  border-radius: 50%;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid #c4c0c0;
+}
+.photoName{
+    color: white;
+    justify-items: center;
+    margin-left: 25rpx;
+}
+.body{
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;    /* 垂直排列 */
+    justify-content: space-between;  /* 首尾元素贴边，中间均匀分布 */
+    width: 90%;
+    height: 875rpx;
+    margin-top: 30rpx;
+    margin-left:5%;
+    border-radius: 20rpx;
+    background-color: rgb(255, 255, 255);
+}
+.bodyItem{
+    box-sizing:border-box;
+    display: flex;
+    padding-left: 40rpx;
+    border-radius: 0rpx;
+    width: 100%;
+    min-height: 125rpx;
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+    font-size: 28rpx;
+}
+.line {
+    margin-left: 2.5%;
+    width: 95%;
+    height:0.5px;
+    /* 线的高度 */
+    background-color: #00000052;
+    /* 透明背景 */
+  }

@@ -1,0 +1,91 @@
+/* pages/Member/member.wxss */
+.order-tab{
+  width: 100%;
+  height: 160rpx;
+  position: relative;
+}
+.order-tab-image{
+  width: 50rpx;
+  height: 50rpx;
+  margin-left: 50rpx;
+  position:absolute;
+}
+.order-tab-text{
+  width: 150rpx;
+  height: 50rpx;
+  margin-top: 100rpx;
+  margin-left: 300rpx;
+}
+.main{
+  background-color: #FFECEC;
+  margin-top: -40rpx;
+  width: 750rpx;
+  height: 600rpx;
+}
+.top-tab{
+  width: 700rpx;
+  height: 70rpx;
+  margin-top: 40rpx;
+  margin-left: 25rpx;
+  border-radius: 50rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.top-main{
+  width: 750rpx;
+  height: 120rpx;
+  position: relative;
+  background-color: #FFECEC;
+}
+.top-img{
+  position: absolute;
+}
+.top-text{
+  position: absolute;
+  margin-left: 330rpx;
+  margin-top: 35rpx;
+}
+.top-img2{
+  position: absolute;
+  height: 80rpx;
+  width: 150rpx;
+  margin-top: 20rpx;
+  margin-left: 530rpx;
+  border-radius:50rpx ;
+}
+.members{
+  width: 700rpx;
+  height: auto;
+  margin-top: 30rpx;
+  border-radius: 10rpx;
+  margin-left: 25rpx;
+  background-color: #FFECEC;
+}
+.mem-name{
+  width: 400rpx;
+  height: 50rpx;
+  border-radius: 15rpx;
+ 
+  margin-left: 35rpx;
+  margin-top: 25rpx;
+}
+.mem-progress{
+  width: 400rpx;
+  height: 50rpx;
+  border-radius: 15rpx;
+
+  margin-left: 35rpx;
+  margin-top: 25rpx;
+}
+.mem-detail{
+  width: 400rpx;
+  height: 50rpx;
+  border-radius: 15rpx;
+
+  margin-left: 35rpx;
+  margin-top: 25rpx;
+}
+.tab.active{
+  background-color: gold;
+}

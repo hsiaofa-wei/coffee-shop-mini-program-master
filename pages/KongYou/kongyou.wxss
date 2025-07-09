@@ -1,0 +1,34 @@
+.status-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+.status-item {
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #333;
+}
+.status-item.active {
+  color: green;
+}
+.empty-coupon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* height: 100vh; */
+  background-color: #f9f9f9;
+}
+.empty-coupon-icon {
+  width: 300px;
+  height: 300px;
+  margin-bottom: 20px;
+}
+.empty-coupon-icon image {
+  width: 100%;
+  height: 100%;
+}
+.empty-coupon-text {
+  font-size: 16px;
+  color: #666;
+}

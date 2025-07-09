@@ -1,0 +1,52 @@
+<!--
+这段代码是微信小程序的会员中心页面（member.wxml），主要用于展示用户的会员信息和不同等级的会员权益。下面逐块解释：
+
+1. 返回栏（order-tab）：
+   - 使用<navigator>组件，点击后跳转到“我的”页面（/pages/myself/myself），open-type="switchTab"表示切换底部tab。
+   - 包含一个左箭头图片和“会员中心”文字，作为页面头部导航。
+
+2. 会员头像与昵称（top-main）：
+   - 显示用户头像（/static/头像.png），昵称（这里写死为“Atuple”），以及一个会员标识图片（/static/mem.png）。
+
+3. 会员等级切换（main > top-tab）：
+   - 三个按钮，分别代表“白银会员”、“黄金会员”、“铂金会员”。
+   - 通过currentTab变量控制当前选中的tab，点击按钮会触发switchTab事件，切换不同会员等级。
+
+4. 会员权益展示（main > members）：
+   - 使用<block wx:for="{{filteredMembers}}">遍历filteredMembers数组，渲染每个会员等级的详细信息。
+   - 每个会员项显示名称（mem-name）、进度（mem-progress）、详情（mem-detail）。
+   - 当前选中的会员项会有active样式。
+
+整体结构清晰，便于用户查看和切换不同会员等级及其权益。
+-->
+<view class="order-tab">
+  <navigator url="/pages/myself/myself" open-type="switchTab">
+    <view>
+      <image class="order-tab-image" src="/static/leftarrow.png" mode="" />
+    </view>
+    <view class="order-tab-text">
+      会员中心
+    </view>
+  </navigator>
+</view>
+<view class="top-main">
+  <image class="top-img" src="/static/头像.png" style="height: 120rpx; width: 120rpx; margin-left: 85rpx; border-radius: 100%;"/>
+  <view class="top-text">Atuple</view>
+  <image class="top-img2" src="/static/mem.png"/>
+</view>
+<view class="main">
+  <view class="top-tab">
+    <button class="tab {{currentTab === 0 ? 'active' : ''}}" bind:tap="switchTab" data-index="0" style="font-size: 25rpx;">白银会员</button>
+    <button class="tab {{currentTab === 1 ? 'active' : ''}}" bind:tap="switchTab" data-index="1" style="font-size: 25rpx;">黄金会员</button>
+    <button class="tab {{currentTab === 2 ? 'active' : ''}}" bind:tap="switchTab" data-index="2" style="font-size: 25rpx;">铂金会员</button>
+  </view>
+  <view class="members">
+    <block wx:for="{{filteredMembers}}" wx:key="id">
+      <view class="mem-item {{item.isSelected? 'active' : ''}}" data-index="{{index}}">
+          <view class="mem-name">{{item.name}}</view>
+          <view class="mem-progress">{{item.progress}}</view>
+          <view class="mem-detail">{{item.detail}}</view>
+      </view>
+    </block>
+  </view>
+</view>
